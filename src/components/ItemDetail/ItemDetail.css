@@ -1,0 +1,12 @@
+.containerVentas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #333333;
+    margin: 3rem;
+}
+
+
+.colorLetra{
+    color: azure;
+}
