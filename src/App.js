@@ -1,24 +1,32 @@
 import './App.css';
-import NavBar from './components/NavBar/NavBar.jsx';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'; 
+import NavBar from './components/NavBar/NavBar.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ItemListContainer from './Pages/ItemListContainer/ItemListContainer';
+import ItemListContainer from './Pages/ItemListContainer/ItemListContainer.jsx';
+import ItemDetailContainer from './Pages/ItemDetailContainer/ItemDetailContainer.js'
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <header className="App-header">
         <NavBar/>
-        <ItemListContainer greeting="Bienvenido a mi pagina"/>
       </header>
-      <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+      <Routes>
+        <Route path='/' element={<ItemListContainer/>} />
+        <Route path='/item' element={<ItemDetailContainer/>} />
+        <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
+      </Routes>
+      </BrowserRouter>
+
+      <script src="https://unpkg.com/react/umd/react.production.min.js" crossOrigin="true"></script>
       <script
         src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-        crossorigin></script>
+        crossOrigin="true"></script>
       <script
         src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-        crossorigin></script>
-      <script>var Alert = ReactBootstrap.Alert;</script>
+        crossOrigin="true"></script>
     </div>
   );
 }

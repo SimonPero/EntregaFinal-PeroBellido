@@ -1,0 +1,13 @@
+.tamano-imagen {
+    height: 136.66px;
+    width: 136.66px;
+    
+}
+.color-carta {
+    background-color: whitesmoke;
+    box-shadow: 0px 5px 20px black;
+}
+.tamano-carta{
+    width: 24rem;
+}
+

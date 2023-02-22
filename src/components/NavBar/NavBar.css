@@ -1,4 +1,4 @@
-.encabezado{
+.encabezado {
     background-color: #333333;
     display: flex;
     justify-content: space-evenly;
@@ -6,19 +6,27 @@
     color: white;
 }
 
-.logo{
-    width:4rem;
-    height: 4rem ;
+.logo {
+    width: 4rem;
+    height: 4rem;
 }
 
-.NavBar-lista{
+.NavBarLista {
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
 
-.NavBar-lista li a{
+.NavBarLista li {
     text-decoration: none;
     color: crimson;
+}
+
+.active {
+    color: purple;
+}
+
+.inactive {
+    color: red;
 }

@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    display: flexbox;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ordenar{
+    list-style: none;
+    margin: 1rem;
+}
