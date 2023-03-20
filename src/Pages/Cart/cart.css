@@ -1,15 +1,28 @@
-.cart-caja{
+.container-cart {
+    width: 80%;
     display: flex;
-    width: 30%;
-    justify-content: space-between;
-    margin: 1rem 1rem 1rem 1rem;  
+    margin: 0%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.cart-imagen{
-    width: 7rem;
-    height: fit-content;
+.ordenar {
+    list-style: none;
+    margin: 0.2rem;
+    width: min(45%, 500px);
 }
 
-.cart-boton{
-    height: 40%;
+.ordenar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.containerVentas2{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.color{
+    color: azure;
 }

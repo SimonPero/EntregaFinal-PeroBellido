@@ -20,6 +20,7 @@ const ItemDetail = ({ detail }) => {
       <h1 className='colorLetra '> {detail.nombre}</h1>
       <h2 className='colorLetra'> Unidades: {detail.capitulos}</h2>
        <p>Precio:{detail.precio}$</p>
+       <p>{detail.description}</p>
       <Counter count={counter} setCount={setCounter} max={detail.capitulos} />
       <div className="containerVentas2">
         <Button variant="primary" size="sm" onClick={() => navigate('/')}>
