@@ -3,6 +3,27 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC2P9dGEkhZ1Z1-exXZz8I_XYuQ2Q2mAzw",
+  authDomain: "perobellido-reactjs.firebaseapp.com",
+  projectId: "perobellido-reactjs",
+  storageBucket: "perobellido-reactjs.appspot.com",
+  messagingSenderId: "147858665469",
+  appId: "1:147858665469:web:92bf96e614494859927394",
+  measurementId: "G-JKHXBP44S6"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -1,3 +1,4 @@
+
 import { Button } from "react-bootstrap"
 import "./Counter.css"
 const Counter = ({ count, setCount, max }) => {
@@ -11,11 +12,12 @@ const Counter = ({ count, setCount, max }) => {
             setCount(count - 1)
         }
     }
+    
     return (
         <div className="counter">
                 <Button onClick={onAdd} variant="primary">+</Button>
                 <p>{count}</p>
-                <Button onClick={onSubstract} variant="primary">-</Button>
+                <Button disabled={count ===1} onClick={onSubstract} variant="primary">-</Button>
         </div>
     )
 }

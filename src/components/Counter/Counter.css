@@ -1,10 +1,12 @@
-.counter{
+.counter {
     display: flex;
     gap: 1rem;
     justify-content: center;
 }
-.counter p{
+
+.counter p {
     display: inline;
     position: relative;
     top: .4rem;
 }
+

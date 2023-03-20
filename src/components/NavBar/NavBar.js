@@ -1,13 +1,17 @@
-import { NavLink }from 'react-router-dom'
-import "./NavBar.css"
-import GranLector from "./../../assets/imagenes/GranLector.png"
-import CartWidget from "../CartWidget/CartWidget"
+import { NavLink } from 'react-router-dom';
+import CartWidget from '../CartWidget/CartWidget';
+import './NavBar.css';
 
 const NavBar = () => {
+    
+
     return (
         <div className="encabezado">
-            <NavLink className={(estatus)=> estatus.isActive ? 'active' : 'inactive'} to="/">
-            <img className="logo" src={GranLector} alt="" />
+            <NavLink
+                className={(estatus) => (estatus.isActive ? 'active' : 'inactive')}
+                to="/"
+            >
+                <img className="logo" src="./imagenes/GranLector.png" alt="" />
             </NavLink>
             <ul className="NavBarLista">
                 <li>
@@ -20,9 +24,9 @@ const NavBar = () => {
                     <NavLink to="/category/Manwhas">Manwhas</NavLink>
                 </li>
             </ul>
-            <CartWidget />0
+            <NavLink to="/cart"><CartWidget /></NavLink>
         </div>
-    )
-}
+    );
+};
 
-export default NavBar
+export default NavBar;
