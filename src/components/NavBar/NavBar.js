@@ -3,14 +3,11 @@ import CartWidget from '../CartWidget/CartWidget';
 import './NavBar.css';
 
 const NavBar = () => {
-    
+
 
     return (
         <div className="encabezado">
-            <NavLink
-                className={(estatus) => (estatus.isActive ? 'active' : 'inactive')}
-                to="/"
-            >
+            <NavLink to="/">
                 <img className="logo" src="./imagenes/GranLector.png" alt="" />
             </NavLink>
             <ul className="NavBarLista">

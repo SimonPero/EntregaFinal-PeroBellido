@@ -1,12 +1,14 @@
 .containerVentas {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    background-color: #333333;
-    width: 50%;
-    margin: 1rem;
+    width: 100%;
+    margin-right: 0%;
+    padding: 1%;
     
 }
+
 .containerVentas2{
     margin: 1rem;
 }

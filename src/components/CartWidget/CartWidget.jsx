@@ -2,6 +2,7 @@
 import "./CartWidget.css"
 import { useContext, useEffect, useState } from 'react'
 import {CartContext} from "../../context/CartContext"
+
 const CartWidget = ()=> {
     const {cart}= useContext(CartContext)
     const [ total, setTotal] = useState(0)
@@ -12,7 +13,7 @@ const CartWidget = ()=> {
 
     return (
         <div className="CartWidget-caja">
-        <img  className="Tamaño-carrito" src= "./imagenes/Carrito.png" alt="" />
+        <img  className="Tamaño-carrito" src="./imagenes/Carrito.png" alt="" />
         {total}
         </div>
     )

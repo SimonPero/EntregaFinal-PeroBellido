@@ -16,7 +16,7 @@ const Counter = ({ count, setCount, max }) => {
     return (
         <div className="counter">
                 <Button onClick={onAdd} variant="primary">+</Button>
-                <p>{count}</p>
+                <p className='color-contador'>{count}</p>
                 <Button disabled={count ===1} onClick={onSubstract} variant="primary">-</Button>
         </div>
     )
