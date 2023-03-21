@@ -6,6 +6,7 @@ import ItemDetailContainer from '../../Pages/ItemDetailContainer/ItemDetailConta
 import ItemListContainer from '../../Pages/ItemListContainer/ItemListContainer.jsx';
 import Cart from '../../Pages/Cart/Cart';
 import { Spinner } from 'react-bootstrap';
+import NotFound from '../NotFound/NotFound';
 
 
 function VariantsExample() {
@@ -27,6 +28,7 @@ const alreadyLoad = () => {
           <Route path='/item/:id' element={<ItemDetailContainer/>} />
           <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
           <Route path='/cart' element={<Cart/>}/>
+          <Route path='/notfound' element={<NotFound/>}/>
         </Routes>
         </CartProvider>
         </BrowserRouter>
