@@ -28,7 +28,7 @@ const alreadyLoad = () => {
           <Route path='/item/:id' element={<ItemDetailContainer/>} />
           <Route path='/category/:categoryId' element={<ItemListContainer/>}/>
           <Route path='/cart' element={<Cart/>}/>
-          <Route path='/notfound' element={<NotFound/>}/>
+          <Route path="*" element={<NotFound />} />
         </Routes>
         </CartProvider>
         </BrowserRouter>
